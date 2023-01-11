@@ -1,68 +1,109 @@
 .container {
-  width: 100vw;
-  height: 100vh;
   .header_message {
-    background-color: #57D9A6;
+    background-color: #57d9a6;
     align-items: center;
     text-align: center;
-  }
-
-  .header_underline_text {
-    background-color: #1C1C33;
-    .header {
-    align-items: center;
+    padding: 5px 0;
+    font-size: 13px;
     display: flex;
-    justify-content: space-between;
-    padding: 0 50px;
-    .header_logo {
-      .logo {
-        display: flex;
-        width: 40px;
-        flex-wrap: wrap;
-      }
+    justify-content: center;
+  }
+  .close_message {
+    margin-left: 20px;
+    background-color:#1c1c33;
+    color: #57d9a6;
+    border: 1px solid black;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
-      .logo_n {
-        background-color: #57D9A6;
-        width: 20px;
-        height: 20px;
-      }
+  .header_case {
+    background-color: #1c1c33;
 
-      .logo_1 {
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-      }
-      .logo_2 {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-      }
-      .logo_3 {
-        border-top-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
-      }
-      .logo_4 {
-        border-bottom-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-      }
-      .title {
-        color: white;
-      }
-    }
-    .header_nav {
+    .header_action {
+      align-items: center;
       display: flex;
-      gap: 32px;
-      a {
+      justify-content: space-between;
+      padding: 0 50px;
+      height: 60px;
+
+      .logo_case {
+        gap: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
         text-decoration: none;
-        color: white;
+
+        .logo {
+          display: flex;
+          width: 40px;
+          flex-wrap: wrap;
+
+          .logo_n {
+            background-color: #57d9a6;
+            width: 20px;
+            height: 20px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+          .logo_2 {
+            transform: rotate(90deg);
+          }
+          .logo_3 {
+            transform: rotate(270deg);
+          }
+          .logo_4 {
+            transform: rotate(180deg);
+          }
+        }
+        .title {
+          color: white;
+          font-weight: 600;
+          font-size: 24px;
+        }
       }
-    }
-    .basket {
-      width: 30px;
+      .header_nav {
+        display: flex;
+        gap: 32px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .basketCase {
+        background-color: #57d9a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        border: none;
+      }
+      .basket {
+        width: 25px;
+      }
+      .basket_counter {
+        background-color: red;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        font-size: 10px;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        position: absolute;
+        margin: 0 0 25px 25px;
+      }
     }
   }
 }
-}
-

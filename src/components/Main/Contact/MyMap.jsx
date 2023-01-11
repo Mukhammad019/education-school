@@ -62,8 +62,7 @@ const MyMap = () => {
                         options={{ float: "left" }}
                         defaultState={{ center: [43.32, 45.69] }}
                     />
-                    {/* <GeoObject defaultGeometry={{}></GeoObject> */}
-                </Map>
+sa                </Map>
             </YMaps>
         </div>
     );
