@@ -1,0 +1,110 @@
+$color_r: #1c1c33;
+$color_text: #57d9a6;
+
+
+
+.wrapper {
+    background-color: $color_r;
+    padding: 0 50px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        max-width: 1124px;
+        margin: auto;
+
+        img {
+            width: 500px;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                text-align: center;
+            }
+
+            p {
+                font-size: 20px;
+            }
+    
+        }
+    }
+
+    .secondContainer {
+        display: flex;
+        background-color: $color_text;
+        border-radius: 6px;
+        justify-content: space-around;
+        padding: 15px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $color_r;
+        
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .thirdContainer {
+        color: white;
+        display: flex;
+        justify-content: space-around;
+
+        .content {
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 55px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
+            p + p {
+                font-size: 20px;
+            }
+        }
+
+        img {
+            object-fit: cover;
+            width: 500px;
+        }
+    }
+
+    .last {
+        color: white;
+        background-color: #57d9a6;
+
+        h1 {
+            padding: 0 100px;
+            margin-bottom: 40px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-around;
+
+            div {
+                text-align: center;
+                width: 270px;
+            }
+        }
+    }
+}
